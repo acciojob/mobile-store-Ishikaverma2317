@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import productsData from "./data";
@@ -17,10 +18,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route
-          path="/"
-          element={<ProductList products={products} />}
-        />
+        <Route path="/" element={<ProductList products={products} />} />
         <Route
           path="/products/:id"
           element={<ProductDetails products={products} />}
